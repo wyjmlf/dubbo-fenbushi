@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.fbs.mapper.BrandMpper">
+
+
+  <update id="deleteMore" parameterType="com.fbs.pojo.Brand">
+      update tb_brand set ha_delete=1
+      where id in
+      <foreach collection="list" item="brand" open="(" separator="," close=")">
+          #{brand.id}
+      </foreach>
+  </update>
+
+</mapper>

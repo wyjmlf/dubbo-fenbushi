@@ -1,0 +1,15 @@
+server:
+  port: 6002
+
+dubbo:
+  application:
+    name: fbs-manager-consumer
+  registry:
+    protocol: zookeeper
+    address: 121.42.242.95:2181,94.191.54.168:2181,47.103.63.1:2181
+  #配置监控中心
+  monitor:
+    protocol: registry #从注册中心(zk)上自动发现
+  consumer:
+    check: false #全局设置服务消费者在启动时不检查服务提供者是否可用，默认是true
+    timeout: 3000  #默认是1000
