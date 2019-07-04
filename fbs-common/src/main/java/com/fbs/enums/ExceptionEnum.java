@@ -19,7 +19,10 @@ public enum ExceptionEnum {
     SPEC_INSERT_SUCCESS(CodeEnum.SUCCESS.getCode(),"规格添加成功"),
     SPEC_DELETE_MORE_SUCCESS(CodeEnum.SUCCESS.getCode(),"批量删除规格成功"),
     TEMPLATE_ADD_SUCCESS(CodeEnum.SUCCESS.getCode(),"新增模板成功"),
-    TRMPLATE_UPDATE_SUCCESS(CodeEnum.SUCCESS.getCode(),"修改模板成功")
+    TRMPLATE_UPDATE_SUCCESS(CodeEnum.SUCCESS.getCode(),"修改模板成功"),
+    ITEM_CATE_INSERT_SUCCESS(CodeEnum.SUCCESS.getCode(),"新增分类成功"),
+    ITEM_CATE_UPDATE_SUCCESS(CodeEnum.SUCCESS.getCode(),"修改分类成功"),
+    ITEM_CATE_DELETE_SUCCESS(CodeEnum.SUCCESS.getCode(),"删除分类成功")
     ;
     private int code;
 
