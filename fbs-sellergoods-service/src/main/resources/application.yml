@@ -5,7 +5,10 @@ spring:
     username: root
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
-
+  redis:
+    host: 47.103.63.1
+  cache:
+    type: redis
 dubbo:
   application:
     name: fbs-sellergoods-provid  #1、指定当前应用服务的名称，注意服务名不能重复

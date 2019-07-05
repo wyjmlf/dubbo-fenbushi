@@ -22,7 +22,9 @@ public enum ExceptionEnum {
     TRMPLATE_UPDATE_SUCCESS(CodeEnum.SUCCESS.getCode(),"修改模板成功"),
     ITEM_CATE_INSERT_SUCCESS(CodeEnum.SUCCESS.getCode(),"新增分类成功"),
     ITEM_CATE_UPDATE_SUCCESS(CodeEnum.SUCCESS.getCode(),"修改分类成功"),
-    ITEM_CATE_DELETE_SUCCESS(CodeEnum.SUCCESS.getCode(),"删除分类成功")
+    ITEM_CATE_DELETE_SUCCESS(CodeEnum.SUCCESS.getCode(),"删除分类成功"),
+    ITEM_CATE_IS_EXIST(CodeEnum.ERROR.getCode(),"该分类名称已存在"),
+    ITEM_CATE_DELETE(CodeEnum.SUCCESS.getCode(),"分类删除成功")
     ;
     private int code;
 
